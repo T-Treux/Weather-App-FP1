@@ -1,3 +1,19 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 h1 {
   color: blue;
+  font-size: 24px;
+  font-weight: 100px;
+  text-align: left;
+  line-height: 28px;
+}
+.weather-App-FP1 {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
 }
