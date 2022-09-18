@@ -25,11 +25,17 @@
           </ul>
           <div class="row">
             <div class="col-md-6">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Mostly Cloudy"
-              />
-              75° F | °C
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Clear"
+                  id="icon"
+                />
+                <div>
+                  <strong id="temperature"></strong
+                  ><span class="units">75° F | °C</span>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
               <ul>
