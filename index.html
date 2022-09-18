@@ -4,49 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/styles.css" />
     <title></Weather-App-FP1></title>
   </head>
   <body>
     <div class="container">
-      <div class="Weather app">
-        <h1>Park Forest, IL</h1>
-        <ul>
-          <li>Tuesday 5:10 PM</li>
-          <li>Mostly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Mostly Cloudy"
-            />
-            75° F | °C
+      <div class="weather-app">
+        <div class="weather-app-wrapper">
+          <h1>Park Forest, IL</h1>
+          <ul>
+            <li>Tuesday 5:10 PM</li>
+            <li>Mostly Cloudy</li>
+          </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Mostly Cloudy"
+              />
+              75° F | °C
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Precipitation: 1%</li>
+                <li>Humidity: 58%</li>
+                <li>Wind: 6 mph</li>
+              </ul>
+            </div>
+            <small>
+              <a
+                href="https://github.com/T-Treux/Weather-App-FP1"
+                target="_blank"
+              >
+                Open Source Code
+              </a>
+              by Tiffannee Wallace
+            </small>
           </div>
-          <div class="col-md-6">
-            <ul>
-              <li>Precipitation: 1%</li>
-              <li>Humidity: 58%</li>
-              <li>Wind: 6 mph</li>
-            </ul>
-          </div>
-          <small>
-            <a
-              href="https://github.com/T-Treux/Weather-App-FP1"
-              target="_blank"
-            >
-              Open Source Code
-            </a>
-            by Tiffannee Wallace
-          </small>
+          <link rel="stylesheet" href="src/index.js" />
         </div>
-        <link rel="stylesheet" href="src/index.js" />
       </div>
     </div>
   </body>
