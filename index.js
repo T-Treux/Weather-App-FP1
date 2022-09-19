@@ -40,8 +40,22 @@ function displayTemperature(response) {
 
 }
 
-let apiKey = "2470c77565feed5f5dce3347bf4cb0f2";
-let apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?q={Chicago}&appid={2470c77565feed5f5dce3347bf4cb0f2}&units=metrics";
+function search(city){
+    let apiKey = "2470c77565feed5f5dce3347bf4cb0f2";
+    let apiUrl =
+  "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={2470c77565feed5f5dce3347bf4cb0f2}&units=metrics";
+    axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event){
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+search("Chicago");
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
