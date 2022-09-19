@@ -46,7 +46,7 @@ li {
 }
 
 .units {
-  font-size: 16px;
+  font-size: 28px;
 }
 
 h6 {
@@ -56,4 +56,8 @@ h6 {
 
 .btn btn-primary {
   color: red;
+}
+
+.clear {
+  font-size: 10px;
 }
