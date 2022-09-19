@@ -5,12 +5,25 @@ body {
 
 h1 {
   color: red;
-  font-size: 20px;
-  font-weight: 100px;
-  text-align: left;
-  line-height: 28px;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 14px;
   margin-bottom: 0;
+  padding-bottom: 0px;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -18,25 +31,29 @@ h1 {
 
 .weather-app {
   max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid red;
-  border-radius: 5px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 10px solid red;
+  border-radius: 10px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.overview {
+  margin-bottom: 20px;
 }
 
-li {
-  list-style: none;
-  display: block;
-  font-family: arial, sans-serif;
-  text-align: left;
+.icon {
+  margin-right: 10px;
 }
 
 .units {
-  font-size: 24px;
+  font-size: 16px;
+}
+
+h6 {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+.btn btn-primary {
+  color: red;
 }
