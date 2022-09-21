@@ -28,35 +28,33 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("date");
-  let iconElement = document.querySelector("#icon")
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png)';
-  iconElement.setAttribute("alt",response.data.weather[0].description);
-
+  iconElement.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function search(city){
-    let apiKey = "97bed167ec49bff56e6c1b63daef9c86";
-    let apiUrl =
-  'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={97bed167ec49bff56e6c1b63daef9c86}&units=metrics';
-    axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "97bed167ec49bff56e6c1b63daef9c86";
+  let apiUrl =
+    "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={97bed167ec49bff56e6c1b63daef9c86}&units=metrics";
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-function handleSubmit(event){
-    event.preventDefault();
-    let cityInputElement = document.querySelector("#city-input");
-    search(cityInputElement.value);
-    let form = document.querySelector("#search-form");
-    form.addEventListener("submit", search);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+  let form = document.querySelector("#search-form");
+  form.addEventListener("submit", search);
 }
 
 search("Chicago");
-
-
-
-
