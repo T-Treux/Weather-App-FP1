@@ -46,6 +46,7 @@ function search(city) {
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
   let apiUrl =
     "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={a43564c91a6c605aeb564c9ed02e3858}&units=metrics";
+  let city = "Chicago, IL";
   axios.get(apiUrl).then(displayTemperature);
 }
 
