@@ -44,9 +44,13 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metrics`;
-  let city = "Chicago, IL";
-  axios.get(apiUrl).then(displayTemperature);
+  let apiUrl =
+    "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${'apiKey'}";
+  let city = "Chicago";
+  axios.get(apiUrl).then(getlatlongTemp);
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  axios.get(apiUrl).then(displayWeather);
 }
 
 function handleSubmit(event) {
