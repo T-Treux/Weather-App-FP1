@@ -4,7 +4,7 @@ body {
 
 h1 {
   color: red;
-  font-size: 28px;
+  font-size: 48px;
   font-weight: 100;
   margin-bottom: 0;
   padding-bottom: 0px;
@@ -22,6 +22,7 @@ li {
   padding: 0;
   font-size: 16px;
   text-transform: capitalize;
+  text-align: left;
 }
 
 .weather-app-wrapper {
@@ -42,7 +43,7 @@ li {
 }
 
 .icon {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .decription {
@@ -50,8 +51,10 @@ li {
 }
 
 .row {
-  font-size: 60px;
+  font-size: 64px;
   color: red;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 .weather-forecast {
@@ -70,4 +73,11 @@ li {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+}
+
+.btn {
+  color: black;
+  margin-bottom: 75px;
+  background-color: red;
+  box-shadow: red;
 }
