@@ -1,6 +1,5 @@
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 h1 {
@@ -46,17 +45,11 @@ li {
   margin-right: 10px;
 }
 
-.units strong {
-  font-size: 64px;
-  color: blue;
-}
-
-.units small {
-  font-size: 16px;
-  position: relative;
-  top: -32px;
-}
-
 .decription {
   text-transform: capitalize;
+}
+
+.row {
+  font-size: 60px;
+  color: red;
 }
