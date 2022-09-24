@@ -59,7 +59,7 @@ function displayForecast(response) {
         </div>
       </div>
   `;
-    }
+    })
   };
 
   forecastHTML = forecastHTML + `</div>`;
