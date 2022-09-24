@@ -48,12 +48,13 @@ li {
 
 .decription {
   text-transform: capitalize;
+  margin-top: 0em;
 }
 
 .row {
   font-size: 64px;
   color: red;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
@@ -81,3 +82,4 @@ li {
   background-color: red;
   box-shadow: red;
 }
+

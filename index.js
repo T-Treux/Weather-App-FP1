@@ -21,31 +21,30 @@ function formatDate(timestamp) {
   return `${days} ${hours}:${minutes}`;
 }
 
-function formatDay(timestamp){
-let date = new Date(timestamp * 1000);
-let day = date.getDay();
-let days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-return days[day];
-
+  return days[day];
 }
-
 
 function displayForecast(response) {
   let forecast = response.data.daily;
- 
-  let forecastElement = document.querySelector("#forecast");
- 
 
-  let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-      forecastHTML =
-        forecastHTML +
-        `<div class="col-2">
+  let forecastElement = document.querySelector("#forecast");
+}
+let forecastHTML = `<div class="row">`;
+forecast.forEach(function (forecastDay, index) {
+  if (index < 6) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-          src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           alt=""
           width="42"
         />
@@ -58,11 +57,11 @@ function displayForecast(response) {
           )}° </span>
         </div>
       </div> `;
-    }
-  });
+  }
+});
 
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
 
 function getForecast(coordinates) {
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
@@ -78,9 +77,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#current-date");
   let iconElement = document.querySelector("#icon");
-  
 
-  
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -93,7 +90,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-    getForecast(response.data.coord);
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -110,6 +107,5 @@ function handleSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
 
 search("Chicago");
