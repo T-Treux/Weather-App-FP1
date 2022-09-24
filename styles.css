@@ -1,5 +1,6 @@
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -81,8 +82,9 @@ li {
   margin-bottom: 75px;
   background-color: red;
   box-shadow: red;
+  outline: none;
 }
 
-.temperature {
-  font-size: 32px;
+.units {
+  font-size: 20px;
 }
