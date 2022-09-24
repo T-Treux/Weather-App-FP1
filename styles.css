@@ -52,7 +52,7 @@ li {
 }
 
 .row {
-  font-size: 64px;
+  font-size: 54px;
   color: red;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -83,3 +83,6 @@ li {
   box-shadow: red;
 }
 
+.temperature {
+  font-size: 32px;
+}
