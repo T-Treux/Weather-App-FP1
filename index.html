@@ -4,49 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <title>Weather App FP</title>
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+  crossorigin="anonymous"/>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title><Weather-App-FP1></title>
   </head>
   <body>
     <div class="container">
-      <div class="Weather app">
-        <h1>Park Forest, IL</h1>
-        <ul>
-          <li>Tuesday 5:10 PM</li>
-          <li>Mostly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Mostly Cloudy"
-            />
-            75° F | °C
-          </div>
-          <div class="col-md-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
             <ul>
-              <li>Precipitation: 1%</li>
-              <li>Humidity: 58%</li>
-              <li>Wind: 6 mph</li>
+              <li> <span id="date"></span></li>
+              <li id="description"></li>
             </ul>
           </div>
-          <small>
+          <div class="row">
+            <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png'"
+                  alt =""
+                  id ="icon"/>
+                  <strong id="temperature"></strong
+                  ><span class="units"> °F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> mph</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <small>
             <a
               href="https://github.com/T-Treux/Weather-App-FP1"
               target="_blank"
             >
               Open Source Code
             </a>
-            by Tiffannee Wallace
+           <h6>by Tiffannee Wallace</h6> 
           </small>
         </div>
-        <link rel="stylesheet" href="src/index.js" />
+        <script src="./index.js"></script>
       </div>
     </div>
   </body>

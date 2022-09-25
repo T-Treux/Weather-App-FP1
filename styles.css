@@ -1,3 +1,88 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
+  background-image: url(fall2022.jpg);
+}
+
 h1 {
-  color: blue;
+  color: gold;
+  font-size: 48px;
+  font-weight: 100;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: left;
+  text-decoration: solid;
+  font-weight: bold;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 10px dashed gold;
+  border-radius: 10px;
+}
+.overview {
+  margin-bottom: 20px;
+}
+.icon {
+  margin-right: 14px;
+}
+.decription {
+  text-transform: capitalize;
+  margin-top: 0em;
+}
+.row {
+  font-size: 54px;
+  color: gold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.weather-forecast {
+  margin-top: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+.weather-forecast-date {
+  font-size: 18px;
+  color: gold;
+}
+.weather-forecast-temperatures {
+  font-size: 16px;
+}
+.weather-forecast-temperature-min {
+  color: black;
+  font-weight: light;
+}
+.btn {
+  color: brown;
+  margin-bottom: 75px;
+  background-color: gold;
+  box-shadow: orange;
+  outline: none;
+  font-weight: bold;
+}
+.units {
+  font-size: 20px;
+}
+h6 {
+  color: gold;
 }
