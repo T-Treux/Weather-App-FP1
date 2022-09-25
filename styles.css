@@ -1,7 +1,6 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: black;
   background-image: url(fall2022.jpg);
 }
 
@@ -39,12 +38,15 @@ li {
   border: 10px dashed gold;
   border-radius: 10px;
 }
+
 .overview {
   margin-bottom: 20px;
 }
+
 .icon {
   margin-right: 14px;
 }
+
 .decription {
   text-transform: capitalize;
   margin-top: 0em;
@@ -65,9 +67,11 @@ li {
   font-size: 18px;
   color: gold;
 }
+
 .weather-forecast-temperatures {
   font-size: 16px;
 }
+
 .weather-forecast-temperature-min {
   color: black;
   font-weight: light;
@@ -80,9 +84,11 @@ li {
   outline: none;
   font-weight: bold;
 }
+
 .units {
   font-size: 20px;
 }
+
 h6 {
   color: gold;
 }
