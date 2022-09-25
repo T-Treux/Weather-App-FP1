@@ -1,14 +1,17 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
+  background-image: url(fall2022.jpg);
 }
 
 h1 {
-  color: red;
+  color: gold;
   font-size: 48px;
   font-weight: 100;
   margin-bottom: 0;
   padding-bottom: 0px;
+  font-weight: bold;
 }
 
 ul {
@@ -18,12 +21,14 @@ ul {
 
 li {
   list-style: none;
-  color: black;
+  color: whitesmoke;
   margin: 0;
   padding: 0;
   font-size: 16px;
   text-transform: capitalize;
   text-align: left;
+  text-decoration: solid;
+  font-weight: bold;
 }
 
 .weather-app-wrapper {
@@ -35,7 +40,7 @@ li {
   max-width: 600px;
   margin: 60px auto;
   padding: 40px;
-  border: 10px solid red;
+  border: 10px dashed gold;
   border-radius: 10px;
 }
 
@@ -54,37 +59,45 @@ li {
 
 .row {
   font-size: 54px;
-  color: red;
+  color: gold;
   margin-top: 0px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 22px;
   text-align: center;
+  font-weight: bold;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
-  color: red;
+  font-size: 18px;
+  color: gold;
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  color: black;
+  font-weight: light;
 }
 
 .btn {
-  color: black;
+  color: brown;
   margin-bottom: 75px;
-  background-color: red;
-  box-shadow: red;
+  background-color: gold;
+  box-shadow: orange;
   outline: none;
+  font-weight: bold;
 }
 
 .units {
   font-size: 20px;
+}
+
+h6 {
+  color: gold;
 }
