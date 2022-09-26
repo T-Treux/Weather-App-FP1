@@ -6,7 +6,7 @@ body {
 
 h1 {
   color: gold;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 100;
   margin-bottom: 0;
   padding-bottom: 0px;
@@ -57,7 +57,7 @@ li {
 }
 
 .row {
-  font-size: 54px;
+  font-size: 60px;
   color: gold;
   margin-top: 0px;
   margin-bottom: 5px;
