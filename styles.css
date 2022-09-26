@@ -11,6 +11,7 @@ h1 {
   margin-bottom: 0;
   padding-bottom: 0px;
   font-weight: bold;
+  font-style: italic;
 }
 
 ul {
@@ -28,6 +29,7 @@ li {
   text-align: right;
   text-decoration: solid;
   font-weight: bold;
+  font-style: italic;
 }
 
 .weather-app-wrapper {
@@ -48,7 +50,7 @@ li {
 }
 
 .icon {
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .decription {
@@ -62,12 +64,14 @@ li {
   margin-top: 0px;
   margin-bottom: 5px;
   font-weight: bold;
+  font-style: italic;
 }
 
 .weather-forecast {
   margin-top: 22px;
   text-align: center;
   font-weight: bold;
+  font-style: italic;
 }
 
 .weather-forecast-date {
@@ -98,4 +102,5 @@ li {
 
 h6 {
   color: gold;
+  font-style: italic;
 }
